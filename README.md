@@ -71,7 +71,9 @@ By going through the folders in order, you learn:
   You practice the above concepts in small tasks and exercises.
 
 - `projects/`  
-  You build small OpenCV-based projects (for example, webcam filters) by combining multiple concepts together.
+  You build small OpenCV-based projects by combining multiple concepts together, such as:
+  - **Webcam Filters** – apply real‑time filters (gray, blur, edges, flip, etc.) to a webcam feed.
+  - **Virtual Drawing** – use color/object tracking to draw on the screen in real time using hand or object movement.
 
 > Note: The local helper script `webcam_filters1.py` is **not** tracked or pushed to this repository, as requested.
 
