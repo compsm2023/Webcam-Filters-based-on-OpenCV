@@ -1,5 +1,5 @@
 import cv2
-image = cv2.imread("Image_drawing_Function\image.png")
+image = cv2.imread("3Image_drawing_Function\image.png")
 if image is None:
     print("Could not load image")
 else:

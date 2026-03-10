@@ -8,16 +8,17 @@ cap = cv2.VideoCapture(0)
 
 while True:
     ret,frame = cap.read()
+    frame = cv2.flip(frame, 1)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     face = face_cascade.detectMultiScale(gray,1.1,5)
     
     for (x,y,w,h) in face:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
     
-    roi_gray = gray[y:y+h, x:x+w]
+        roi_gray = gray[y:y+h, x:x+w]
     # "roi"= rate of interest
     # gray[150:150+80,100:100+80]
-    roi_color = frame[y:y+h, x:x:w]
+        roi_color = frame[y:y+h, x:x:w]
 
     """
     x = 100
